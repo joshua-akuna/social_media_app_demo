@@ -2,6 +2,9 @@
 const express = require('express')
 const server = express()
 const cors = require('cors')
+const connectMongo = require('./mongodb')
+
+connectMongo()
 
 // use middleware
 server.use(express.json())
